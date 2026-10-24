@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "kit": {
+    "number": 93,
+    "slug": "spatial-supply",
+    "title": "Spatial Supply",
+    "niche": "fashion",
+    "tags": [
+      "product-rail",
+      "rack-focus",
+      "tilt-layers"
+    ],
+    "intent": "A streetwear shop whose eight pieces hang on a chrome rail and turn to face the visitor",
+    "kicker": "Spatial Supply",
+    "descriptor": "Streetwear shop · eight pieces on a chrome rail, each turns to face you",
+    "customisation": {
+      "level": "brandable",
+      "easy_to_change": [
+        "The name, line, price and shop link of every garment",
+        "Colours, typography and the logo",
+        "Which garments hang on which rail, up to three rails of twelve",
+        "How the rail is hung: from the ceiling or with end caps",
+        "The headline, the questions and the sign-up form"
+      ],
+      "requires_new_media": [
+        "Your own garments on hangers, photographed front, side and back at one scale with the hook at the top centre"
+      ],
+      "note": "The rod is a photograph of a chrome rail and suits any garments. Its height is set for these hangers' hooks; if yours sit higher or lower, change --rod-y on the rail."
+    },
+    "business_name": "Spatial Supply",
+    "logo_svg": "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 7.6V6.7a1.9 1.9 0 1 0-1.9-1.9\"/><path d=\"M12 7.6 3.1 14.1c-.9.7-.4 2.1.7 2.1h16.4c1.1 0 1.6-1.4.7-2.1L12 7.6Z\"/></svg>",
+    "card_aspect": "16/10"
+  },
+  "subject": {
+    "description": "figure for fashion",
+    "concept_image": "input/concept.png",
+    "concept_source": "placeholder",
+    "mesh_source": "build-by-code",
+    "size_m": 1.8,
+    "brand_safe": true,
+    "placement": "center-mid",
+    "scale": 1,
+    "rotation_deg": [
+      0,
+      35,
+      0
+    ]
+  },
+  "engine": {
+    "primary": "product-rail",
+    "fallback_mobile": "poster-parallax"
+  },
+  "camera": {
+    "hero": {
+      "preset": "pointer-parallax",
+      "params": {
+        "max_px": 10,
+        "position": [
+          1.881,
+          0.54,
+          3.42
+        ],
+        "target": [
+          0,
+          0.28800000000000003,
+          0
+        ],
+        "fov": 32
+      }
+    },
+    "scroll": {
+      "preset": "rack-focus",
+      "params": {}
+    },
+    "path": "reference/camera-path.json"
+  },
+  "interactions": [
+    {
+      "type": "tilt-layers",
+      "target": "layers",
+      "range_px": 10,
+      "mobile": "orientation-tilt",
+      "reduced": "none"
+    },
+    {
+      "type": "magnetic-cta",
+      "target": "#cta-primary",
+      "range_px": 8,
+      "mobile": "none",
+      "reduced": "none"
+    }
+  ],
+  "scroll_bindings": [
+    {
+      "type": "section-reveal",
+      "section": "*"
+    },
+    {
+      "type": "progress-hud",
+      "section": "*"
+    }
+  ],
+  "lighting": {
+    "preset": "noir",
+    "post": [
+      "vignette"
+    ]
+  },
+  "tokens": "reference/tokens.json",
+  "layout": "reference/layout.png",
+  "sections": [
+    {
+      "id": "rail",
+      "type": "rail",
+      "note": "On the rail",
+      "headline": "Black, bone *and gold*.",
+      "subline": "Eight pieces from the Spatial studio: tees and sweats, coach, work and varsity jackets, and a puffer vest.",
+      "hint": "Hover to turn. Click to look closer.",
+      "hint_touch": "Swipe along the rail. Tap to look closer.",
+      "cta": "Join the drop list",
+      "shop_label": "View in the shop",
+      "ask_label": "Ask about this",
+      "rod_mount": "ceiling",
+      "rails": [
+        {
+          "id": "range",
+          "label": "The range",
+          "items": [
+            {
+              "id": "box-tee",
+              "name": "Box Tee",
+              "meta": "Boxy T-shirt · Bone",
+              "price": "£38",
+              "front": "assets/products/spatial-box-tee-front.webp",
+              "side": "assets/products/spatial-box-tee-side.webp",
+              "back": "assets/products/spatial-box-tee-back.webp"
+            },
+            {
+              "id": "long-sleeve",
+              "name": "Long Sleeve",
+              "meta": "Long sleeve T-shirt, gold sleeve print · Black",
+              "price": "£48",
+              "front": "assets/products/spatial-long-sleeve-front.webp",
+              "side": "assets/products/spatial-long-sleeve-side.webp",
+              "back": "assets/products/spatial-long-sleeve-back.webp"
+            },
+            {
+              "id": "crewneck",
+              "name": "Crewneck",
+              "meta": "Collegiate crewneck sweatshirt · Heather grey",
+              "price": "£72",
+              "front": "assets/products/spatial-crewneck-front.webp",
+              "side": "assets/products/spatial-crewneck-side.webp",
+              "back": "assets/products/spatial-crewneck-back.webp"
+            },
+            {
+              "id": "heavy-hoodie",
+              "name": "Heavy Hoodie",
+              "meta": "Oversized hoodie, gold embroidery · Black",
+              "price": "£95",
+              "front": "assets/products/spatial-heavy-hoodie-front.webp",
+              "side": "assets/products/spatial-heavy-hoodie-side.webp",
+              "back": "assets/products/spatial-heavy-hoodie-back.webp"
+            },
+            {
+              "id": "work-jacket",
+              "name": "Work Jacket",
+              "meta": "Canvas work jacket, corduroy collar · Bone",
+              "price": "£145",
+              "front": "assets/products/spatial-work-jacket-front.webp",
+              "side": "assets/products/spatial-work-jacket-side.webp",
+              "back": "assets/products/spatial-work-jacket-back.webp"
+            },
+            {
+              "id": "coach-jacket",
+              "name": "Coach Jacket",
+              "meta": "Nylon coach jacket · Black",
+              "price": "£110",
+              "front": "assets/products/spatial-coach-jacket-front.webp",
+              "side": "assets/products/spatial-coach-jacket-side.webp",
+              "back": "assets/products/spatial-coach-jacket-back.webp"
+            },
+            {
+              "id": "varsity",
+              "name": "Varsity Jacket",
+              "meta": "Wool and leather varsity · Black and bone",
+              "price": "£240",
+              "front": "assets/products/spatial-varsity-front.webp",
+              "side": "assets/products/spatial-varsity-side.webp",
+              "back": "assets/products/spatial-varsity-back.webp"
+            },
+            {
+              "id": "puffer-vest",
+              "name": "Puffer Vest",
+              "meta": "Quilted puffer vest, gold zip · Black",
+              "price": "£130",
+              "front": "assets/products/spatial-puffer-vest-front.webp",
+              "side": "assets/products/spatial-puffer-vest-side.webp",
+              "back": "assets/products/spatial-puffer-vest-back.webp"
+            }
+          ]
+        }
+      ],
+      "rod": "assets/products/rail-tube.webp",
+      "rod_y": 0.0461
+    },
+    {
+      "id": "band",
+      "type": "marquee",
+      "items": [
+        "TEES AND FLEECE",
+        "COACH, WORK AND VARSITY",
+        "BLACK, BONE AND GOLD",
+        "SPATIAL SUPPLY"
+      ]
+    },
+    {
+      "id": "backs",
+      "type": "kitwall",
+      "kicker": "Front and back",
+      "headline": "Turn it *round*.",
+      "subline": "Most of the print is on the back. Hover or tap a piece to turn it.",
+      "turn_label": "Turn",
+      "items": [
+        {
+          "name": "Box Tee",
+          "line": "A wireframe cube across the back",
+          "front": "assets/products/spatial-box-tee-front.webp",
+          "back": "assets/products/spatial-box-tee-back.webp"
+        },
+        {
+          "name": "Long Sleeve",
+          "line": "SPATIAL down the sleeve, gold at the neck",
+          "front": "assets/products/spatial-long-sleeve-front.webp",
+          "back": "assets/products/spatial-long-sleeve-back.webp"
+        },
+        {
+          "name": "Crewneck",
+          "line": "SPATIAL arched across the chest, a plain back",
+          "front": "assets/products/spatial-crewneck-front.webp",
+          "back": "assets/products/spatial-crewneck-back.webp"
+        },
+        {
+          "name": "Heavy Hoodie",
+          "line": "SPATIAL in gold across the back",
+          "front": "assets/products/spatial-heavy-hoodie-front.webp",
+          "back": "assets/products/spatial-heavy-hoodie-back.webp"
+        },
+        {
+          "name": "Work Jacket",
+          "line": "An unfolded box net across the back",
+          "front": "assets/products/spatial-work-jacket-front.webp",
+          "back": "assets/products/spatial-work-jacket-back.webp"
+        },
+        {
+          "name": "Coach Jacket",
+          "line": "SPATIAL in gold across the shoulders",
+          "front": "assets/products/spatial-coach-jacket-front.webp",
+          "back": "assets/products/spatial-coach-jacket-back.webp"
+        },
+        {
+          "name": "Varsity Jacket",
+          "line": "SPATIAL in gold chenille across the back",
+          "front": "assets/products/spatial-varsity-front.webp",
+          "back": "assets/products/spatial-varsity-back.webp"
+        },
+        {
+          "name": "Puffer Vest",
+          "line": "A woven label at the neck",
+          "front": "assets/products/spatial-puffer-vest-front.webp",
+          "back": "assets/products/spatial-puffer-vest-back.webp"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "type": "faq",
+      "note": "Before you buy",
+      "headline": "Questions.",
+      "items": [
+        {
+          "q": "How do the sizes run?",
+          "a": "The tees, sweats and hoodie are cut loose with dropped shoulders; the jackets are true to size. If you are between sizes, take the smaller for a closer fit."
+        },
+        {
+          "q": "How should I wash it?",
+          "a": "Inside out, cool, and dry it flat or on a line. Keep the prints and the embroidery away from a hot iron."
+        },
+        {
+          "q": "Can I return something?",
+          "a": "Yes. Send it back unworn with its tags and we refund it once it arrives."
+        },
+        {
+          "q": "When is the next drop?",
+          "a": "Join the list below and you will hear before anything new goes on the rail."
+        }
+      ]
+    },
+    {
+      "id": "enquire",
+      "type": "form",
+      "kicker": "The list",
+      "headline": "First look at the next drop.",
+      "subline": "One email when something new goes on the rail. Nothing else.",
+      "cta": "Join the list",
+      "fields": [
+        "email"
+      ]
+    }
+  ],
+  "copy_status": "real",
+  "assets": {
+    "model": null,
+    "poster": "assets/poster.webp",
+    "env": null,
+    "depth": "reference/depth.webp",
+    "layers": [],
+    "frames": [],
+    "blend": null
+  },
+  "scene": {
+    "brief": "reference/scene-brief.json",
+    "swap_materials": [
+      "paint",
+      "trim"
+    ],
+    "explode_parts": []
+  },
+  "budget": {
+    "glb_max_mb": 2,
+    "tri_max": 60000,
+    "draw_calls_max": 100,
+    "js_max_kb": 350,
+    "lcp_max_s": 1.8,
+    "decoder": "draco"
+  },
+  "tools": [
+    "chatgpt-sites",
+    "claude-code",
+    "cursor",
+    "lovable",
+    "replit"
+  ],
+  "license": {
+    "type": "single-end-product",
+    "commercial": true
+  }
+}

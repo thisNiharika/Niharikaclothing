@@ -1,0 +1,35 @@
+/* Licensed under Spatial Sites key SS-093-GENMGQ. Redistribution prohibited. https://spatialsites.co/licence */
+:root {
+  --c-bg: #e7e2d8;
+  --c-surface: #dcd6ca;
+  --c-text: #151412;
+  --c-muted: #605b53;
+  --c-accent: #b08b3a;
+  --c-on_accent: #f7f5f0;
+  --c-scrim: rgba(231, 226, 216, 0.72);
+  --f-display: "Archivo", "Instrument Sans", system-ui, sans-serif;
+  --f-body: "Instrument Sans", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --f-display-weight: 700; --f-display-tracking: -0.035em;
+  --f-hero: var(--f-display);
+  --t-0: 12px;
+  --t-1: 14px;
+  --t-2: 16px;
+  --t-3: 20px;
+  --t-4: 28px;
+  --t-5: 40px;
+  --t-6: 64px;
+  --t-7: 96px;
+  --s-0: 4px;
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 64px;
+  --s-8: 96px;
+  --s-9: 128px;
+  --radius: 2px;
+  --m-fast: 160ms; --m-base: 240ms; --m-slow: 600ms; --m-ease: cubic-bezier(0.2,0,0,1);
+}

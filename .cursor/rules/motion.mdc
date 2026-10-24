@@ -1,0 +1,12 @@
+<!-- Licensed under Spatial Sites key SS-093-GENMGQ. Redistribution prohibited. https://spatialsites.co/licence -->
+---
+description: Motion site kit rules
+globs: ["site/**/*.ts", "site/**/*.css", "site/**/*.html"]
+alwaysApply: true
+---
+- Read spec.json and reference/tokens.json before changing styles. Use CSS variables generated from tokens.json; never hardcode hex values.
+- The WebGL render loop lives in site/src/webgl/scene.ts. Do not move it, and do not touch it when editing DOM sections.
+- One scroll driver (GSAP ScrollTrigger). One animation library. No framer-motion, no Lenis unless already present.
+- Every animation has a prefers-reduced-motion branch.
+- Never re-export or modify assets/model.glb.
+- Keep the LICENSE header comment at the top of every source file.
